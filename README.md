@@ -1,2 +1,3 @@
 # NoteHTML
-Made for personal customizable note-taking on office computer
+Initially made for personalized and custom note-taking needs on my office computer.
+Sharing with everyone in similar situation
