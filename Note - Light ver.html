@@ -1,0 +1,41 @@
+<head>
+    <title>NoteHTML</title>
+    <style>
+        body{}
+        #input{
+            color:grey;
+        }
+        #input:focus{
+            outline:none;
+            border:2px solid black;
+            color:darkslategrey;
+        }
+        ul a{
+
+        }
+    </style>
+</head>
+<body>
+    <div id="output"></div>
+    <textarea id="input" rows = 8 cols= 88 oninput="renderHTML()"placeholder="Write notes in html format here.."></textarea>
+    <button onclick = renderHTML()>Re-Render</button>
+    <p><i>*Info: </i><b>Ctrl + S</b> to save note locally</p>
+    <p><i>*Info: </i><b>Ctrl + Click</b> to open a link in new tab</p>
+    <p><i>*Info: </i><b>Always include https://</b> when making a href, E.G.: https://www.google.com</p>
+    <p><i>*Info: </i>Remember to save before refreshing page or redirect from your links. Use the "Re-render" button to rerender your text if needed</p>
+    <p><i>*Info: </i>Feel free to edit your version of the html note file manually and add your own features</p>
+    <p><i>*Info: </i>Source File here: <a href = "https://github.com/raymondcjyi/NoteHTML">https://github.com/raymondcjyi/NoteHTML</a></p>
+    <p><i>*Info: </i>If you think there are better features, please contact me or just contribute via GitHub! Thanks!</p>
+
+
+
+    <script>
+        document.getElementById('input').value = document.getElementById('output').innerHTML
+        renderHTML()
+        function renderHTML() {
+        const htmlInput = document.getElementById("input").value;
+        const outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = htmlInput;
+    }
+    </script>
+</body>
