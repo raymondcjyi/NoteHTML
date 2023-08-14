@@ -4,7 +4,7 @@
 
 ## Instructions
 + Download the html file and open it to start taking notes in html.
-+ + Ctrl + S to save as new file in your local machine.
++ Ctrl + S to save your content as new file in your local machine.
 
 ## Forseeable Future Features
 + 
