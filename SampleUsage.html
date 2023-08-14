@@ -1,0 +1,48 @@
+
+<!-- saved from url=(0043)file:///C:/Users/119275/Documents/Note.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>NoteHTML</title>
+    <style>
+        body{background-color: black; color: white; }
+        #input{
+            background-color: black ;color:#888888;
+        }
+        #input:focus{
+            outline:none;
+            border:2px solid white;
+            color:lightGrey;
+        }
+        ul a{
+            color:#fff
+        }
+    </style>
+</head>
+<body>
+    <div id="output"><h1> Example usage </h1>
+<ul>My Quick Links:
+ <ul><a href="https://www.google.com/">Google</a> [Using this for web search]</ul>
+ <ul><a href="https://www.youtube.com/">YouTube</a> [Using this for videos]</ul>
+<ul></ul></ul></div>
+    <textarea id="input" rows="8" cols="88" oninput="renderHTML()" placeholder="Write notes in html format here.."></textarea>
+    <button onclick="renderHTML()">Re-Render</button>
+    <p><i>*Info: </i><b>Ctrl + S</b> to save note locally</p>
+    <p><i>*Info: </i><b>Ctrl + Click</b> to open a link in new tab</p>
+    <p><i>*Info: </i><b>Always include https://</b> when making a href, E.G.: https://www.google.com</p>
+    <p><i>*Info: </i>Remember to save before refreshing page or redirect from your links. Use the "Re-render" button to rerender your text if needed</p>
+    <p><i>*Info: </i>Feel free to edit your version of the html note file manually and add your own features</p>
+    <p><i>*Info: </i>Source File here: <a href="https://github.com/raymondcjyi/NoteHTML" style="color:#fff">https://github.com/raymondcjyi/NoteHTML</a></p>
+    <p><i>*Info: </i>If you think there are better features, please contact me or just contribute via GitHub! Thanks!</p>
+
+
+
+    <script>
+        document.getElementById('input').value = document.getElementById('output').innerHTML
+        renderHTML()
+        function renderHTML() {
+        const htmlInput = document.getElementById("input").value;
+        const outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = htmlInput;
+    }
+    </script>
+
+</body></html>
