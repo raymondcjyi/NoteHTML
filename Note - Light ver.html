@@ -34,9 +34,7 @@
         document.getElementById('input').value = document.getElementById('output').innerHTML
         renderHTML()
         function renderHTML() {
-        const htmlInput = document.getElementById("input").value;
-        const outputDiv = document.getElementById("output");
-        outputDiv.innerHTML = htmlInput;
-    }
+        	document.getElementById("output").innerHTML = document.getElementById("input").value
+        }
     </script>
 </body>
